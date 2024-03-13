@@ -1,30 +1,32 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import {motion} from "framer-motion"
-import {slideInFromBottom } from '@/utils/motion'
+import { ProjectCard } from './ProjectCard'
+
+const projects = [
+  {
+    name: "Dynamite Trade",
+    description: "A simulated trading platform powered by ChatGPT-3.5 Turbo that leveraages trading experience.",
+    skills: ["Typescript", "Tailwind CSS", "Shadcn UI", "Prisma", "Supabass"],
+    src: "/landingpage-animation.gif",
+    href: "https://dynamitetrade.vercel.app"
+  },
+  {
+    name: "Motor Master",
+    description: "A car application assisting customers on making purchasing options regarding new types of cars.",
+    skills: ["Java", "JavaFX", "MySQL", "CSS"],
+    src: "/car-shop.png",
+    href: "https://github.com/longleDevops/Car-Shop-Application"
+  }
+]
 
 const RightColumn = () => {
   return (
-    <motion.div 
-    initial="hidden"
-    animate="visible"
-    className="md:mt-[50px] flex justify-center md:w-[50%] min-h-[45%]">
-      <div className="border-4 border-black h-[500px] rounded-full">
-        <motion.div
-          variants={slideInFromBottom(0)}
-        >
-        <Image
-          src="/profile-img-2.png"
-          alt="profile image"
-          height={500}
-          width={500}
-          className="rounded-full min-h-[490px]"
-        />
-
-        </motion.div>
-      </div>
-    </motion.div>
+    <div className="md:mt-[50px] flex flex-col gap-6 md:w-[50%] min-h-[45%] ml-auto h-[2000px] pt-6 pl-6">
+      {projects.map((project, index) => (
+        <ProjectCard key={project.name} name={project.name} description={project.description} skills={project.skills} href={project.href} index={index} src={project.src} />
+      ))}
+    </div>
   )
 }
 

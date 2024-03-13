@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-const SideNavBar = () => {
+const Sidebar = () => {
   return (
-    <div className="flex-none w-20  h-screen fixed">
+    <div className="fixed w-[100px] h-screen ">
       <div className="flex flex-col h-full items-center justify-center gap-[10px] z-60">
         <Link
           href="https://github.com/longleDevops"
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
         >
           <Image
@@ -28,4 +28,4 @@ const SideNavBar = () => {
   )
 }
 
-export default SideNavBar
+export default Sidebar

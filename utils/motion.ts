@@ -39,13 +39,13 @@ export function slideInFromLeft(delay: number) {
   };
   export function slideInFromBottom(delay: number) {
     return {
-      hidden: { y: 30, opacity: 0 },
+      hidden: { y: 100, opacity: 0 },
       visible: {
         y: 0,
         opacity: 1,
         transition: {
           delay: delay,
-          duration: 0.2,
+          duration: 0.5,
         },
       },
     };

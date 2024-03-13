@@ -1,23 +1,20 @@
-import SideNavBar from '@/app/components/main/SideNavBar'
+import SideBar from '@/app/components/main/SideBar'
 import Image from 'next/image'
 import LeftColumn from './components/main/LeftColumn'
 import RightColumn from './components/main/RightColumn'
 
-import {Roboto_Serif} from 'next/font/google'
+import { Roboto_Serif } from 'next/font/google'
 
 const roboto = Roboto_Serif({
-  subsets:['latin']
+  subsets: ['latin']
 })
 
 export default function Home() {
   return (
     <div className={roboto.className}>
-      <div className="flex h-[2000px] overflow-x-hidden">
-        <SideNavBar/>
-        <div className="flex-1 md:flex h-screen relative pl-20 pt-20 -z-10">
-          <LeftColumn/>
-          <RightColumn/>
-        </div>
+      <div className="relative flex-1 h-screen p-20 md:flex">
+        <LeftColumn />
+        <RightColumn />
       </div>
     </div>
   )
