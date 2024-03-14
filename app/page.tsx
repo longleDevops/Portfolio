@@ -12,7 +12,7 @@ const roboto = Roboto_Serif({
 export default function Home() {
   return (
     <div className={roboto.className}>
-      <div className="relative flex-1 h-screen p-20 md:flex">
+      <div className="relative flex-col flex-1 h-screen p-6 md:p-20 md:flex">
         <LeftColumn />
         <RightColumn />
       </div>

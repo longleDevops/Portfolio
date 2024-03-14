@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[90px] fixed z-50 pl-40 pr-[90px] flex items-center justify-between bg-white max-md:flex-col max-md:pt-[20px] max-md:h-32 border-b border-muted-foreground">
+    <nav className="w-full md:h-[90px] md:fixed z-50 md:pl-40 md:pr-[90px] px-10 flex items-center justify-between bg-white max-md:flex-col-reverse max-md:pt-[20px] max-md:h-[120px] border-b border-muted-foreground max-md:pb-6">
       <div className="flex gap-2">
         <Image
           src="gmail-2.svg"
@@ -13,7 +13,7 @@ const Navbar = () => {
         />
         <p className="underline">long.le.devops@gmail.com</p>
       </div>
-      <div className="flex gap-[30px]">
+      <div className="flex md:gap-[30px] justify-between max-md:w-full ">
         <div className="flex items-center justify-center">
 
           <h4>Resume</h4>

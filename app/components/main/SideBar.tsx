@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Sidebar = () => {
   return (
-    <div className="fixed w-[100px] h-screen z-[100]">
-      <div className="flex flex-col h-full items-center justify-center gap-[10px] z-60">
+    <div className="md:fixed md:w-[100px] md:h-screen z-[100] w-full mt-8 md:mt-0 ">
+      <div className="flex md:flex-col h-full items-center justify-center gap-[10px] z-60">
         <Link
           href="https://github.com/longleDevops"
           target="_blank"

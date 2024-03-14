@@ -3,7 +3,7 @@ import React from 'react'
 import ImageSkills from "@/app/components/sub/ImageSkills"
 const LeftColumn = () => {
   return (
-    <div className="mt-[70px] flex flex-col md:w-[50%] min-h-[45%] px-20 fixed py-5 top-20 bottom-0" >
+    <div className="md:mt-[70px] flex flex-col md:w-[50%] min-h-[45%] px-6 md:px-20 md:fixed md:py-5 md:top-20 md:bottom-0 " >
       <div className='flex items-center gap-4'>
         <Image
           src="/profile-img-2.png"
@@ -13,8 +13,8 @@ const LeftColumn = () => {
           className="object-contain border-2 border-black rounded-full"
         />
         <div>
-          <h1 className="font-[700]  text-5xl">Long Le</h1>
-          <h2 className="capitalize font-[500] text-xl mt-[10px]">Full-stack Developer</h2>
+          <h1 className="font-[700]  md:text-5xl text-3xl">Long Le</h1>
+          <h2 className="capitalize font-[500] md:text-xl text-sm mt-[10px]">Full-stack Developer</h2>
         </div>
       </div>
 
