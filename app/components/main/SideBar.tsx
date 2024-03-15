@@ -16,12 +16,18 @@ const Sidebar = () => {
             height={30}
           />
         </Link>
-        <Image
-          src="linkdin.svg"
-          alt="Github logo"
-          width={30}
-          height={30}
-        />
+        <Link
+          href="https://www.linkedin.com/in/longledevops/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="linkdin.svg"
+            alt="Github logo"
+            width={30}
+            height={30}
+          />
+        </Link>
 
       </div>
     </div>
