@@ -22,7 +22,7 @@ const projects = [
 
 const RightColumn = () => {
   return (
-    <div className="md:mt-[50px] flex flex-col gap-6 md:w-[50%] min-h-[45%] ml-auto h-[2000px] pt-6 pl-6">
+    <div className="md:mt-[50px] flex flex-col gap-6 border-l md:pl-10 md:w-[50%] min-h-[45%] ml-auto h-[2000px] pt-6 pl-6">
       {projects.map((project, index) => (
         <ProjectCard key={project.name} name={project.name} description={project.description} skills={project.skills} href={project.href} index={index} src={project.src} />
       ))}

@@ -18,7 +18,7 @@ export const ProjectCard = ({ name, description, skills, href, index, src }: Pro
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex max-h-[320px]  overflow-hidden  shadow-lg rounded-lg hover:ring-2 hover:ring-black ${index === 1 ? "flex-row-reverse pr-8" : "pl-8"}`}>
+      className={`flex h-[280px]  overflow-hidden  shadow-2xl rounded-xl hover:ring-2 hover:ring-black ${index === 1 ? "flex-row-reverse pr-8" : "pl-8"}`}>
       <div className="w-[50%] flex flex-col pb-4 pt-8">
         <p className="text-xl font-semibold">{name}</p>
         <p className="mt-4 text-xs leading-6 text-gray-600">{description}</p>

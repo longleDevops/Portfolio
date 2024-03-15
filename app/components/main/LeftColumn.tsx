@@ -3,7 +3,7 @@ import React from 'react'
 import ImageSkills from "@/app/components/sub/ImageSkills"
 const LeftColumn = () => {
   return (
-    <div className="md:mt-[70px] flex flex-col md:w-[50%] min-h-[45%] px-6 md:pl-10 md:pr-28 md:fixed md:py-5 md:top-20 md:bottom-0" >
+    <div className="md:mt-[70px] flex flex-col md:w-[50%] min-h-[45%] px-6 md:pl-10 md:pr-24 md:fixed md:py-5 md:top-20 md:bottom-0" >
       <div className='flex items-center gap-4'>
         <Image
           src="/profile-img-2.png"
